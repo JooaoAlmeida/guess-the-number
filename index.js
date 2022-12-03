@@ -5,7 +5,7 @@ const chances = 5
 
 function init(){
     computerNumber = Math.floor(Math.random() * 100 +1)
-    console.log(computerNumber)
+    //console.log(computerNumber)
 }
 
 function guessTheNumber(){
