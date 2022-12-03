@@ -14,7 +14,7 @@ function guessTheNumber(){
     document.getElementById('guesses').innerHTML = userNumbers
     attempts++
 
-    if (attempts <= chances){
+    if (attempts < chances){
         if (userNumber > computerNumber){
             document.getElementById('textOutput').innerHTML = 'Your guess is too high'
             document.getElementById('attempts').innerHTML = attempts
@@ -31,9 +31,17 @@ function guessTheNumber(){
             document.getElementById('inputBox').setAttribute('Readonly', '')             
         }
     }
-    else {
-        document.getElementById('textOutput').innerHTML = `You Lose!<br>The number was ${computerNumber}`
-        document.getElementById('inputBox').setAttribute('Readonly', '') 
+    else if (attempts == chances){
+        if (userNumber == computerNumber){
+            document.getElementById('textOutput').innerHTML = 'Congratulations!'
+            document.getElementById('attempts').innerHTML = attempts
+            document.getElementById('inputBox').setAttribute('Readonly', '')
+        }
+        else {
+            document.getElementById('textOutput').innerHTML = `You Lose!<br>The number was ${computerNumber}`
+            document.getElementById('inputBox').setAttribute('Readonly', '') 
+        }
+       
     } 
 }
 
