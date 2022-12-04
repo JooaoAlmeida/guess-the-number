@@ -10,30 +10,25 @@
   </head>
 
   <body onload="init()">
-    <main>
-      <div id="welcomeScreen">
-        <h2>Guess the Number <br />1 - 100</h2>
-      </div>
-
-      <div id="gameArea">
-        <section class="inputArea">
-          <h3 id="textOutput">Your Guess: </h3>
-          <input type="number" id="inputBox" onchange="guessTheNumber()" min="1" max="100"/>
-        </section>
-        <section class="stats">
-          <div class="info">
-            <p>Number of attempts:</p>
-            <span id="attempts">0</span>
+    <main>      
+          <h2>Guess the Number <br />1 - 100</h2>       
+          <div class="wrapper">
+              <h3 id="textOutput">Your Guess: </h3>
+              <input type="number" id="inputBox" onchange="guessTheNumber()" min="1" max="100"/>
           </div>
-          <div class="info">
-            <p>Your guesses:</p>
-            <span id="guesses">0</span>
-          </div>
-        </section>
-        <button id="newGameButton" onclick="newGame()">NEW GAME</button>
-      </div>
+          <div class="results">
+              <p>Number of attempts:</p>
+              <p id="attempts">0</p>          
+              <p>Your guesses:</p>
+              <p id="guesses">0</p>
+          </div>          
+          <div class="button" id="newGameButton" onclick="newGame()">NEW GAME</div>
     </main>
-    <p class="link">Developed by <a href="https://github.com/JooaoAlmeida" target="_blank">João Almeida</a></p>
+    <footer>
+      <p>Developed by</p>
+      <a href="https://github.com/JooaoAlmeida" target="_blank">João Almeida</a>
+    </footer>
+    
     <script src="index.js"></script>
   </body>
 </html>

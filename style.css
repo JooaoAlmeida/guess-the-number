@@ -1,78 +1,82 @@
-body {
-  font-family:'Bungee Inline', cursive;;
-  padding: 0px;
+body, p, h2, h3, a, button, input{
   margin: 0px;
-  font-size: 24px;
+  padding: 0px;
+  line-height: 1em;  
+}
+body{
   background-color:#2ed573;
-  height: 100vh;
-  color: #2f3542;;
 }
 main{
+  width: 100%;
+  height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Bungee Inline', cursive;
   text-align: center;
+  box-sizing: border-box;
   border: 8px solid#2f3542;
-  padding: 15px;
   border-radius: 20px;
   background-color: #ff4757;
-  width: 500px;
-  margin: 10px auto;
   box-shadow: 0px 10px 20px #2f3542;
-  box-sizing: border-box;
+  overflow: hidden;
+  color: #2f3542;
 }
-.inputArea{
-  height: 110px;
+.wrapper{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  height: 15%;
+  width: 100%;
+}
+.results{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%;
+  font-size: 1.5em;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+footer a{
+  margin-left: 8px;
+  text-decoration: none;
 }
 h2{
   font-family:'Bungee Shade', cursive;
-  color: #2f3542;
-  font-size: 53px;
-  line-height: 60px;
-  margin: 0px;
-  margin-bottom: 20px;
-  
+  font-size: 3.5em;
 }
-h3{  
+h3{
   color: #ced6e0;
-  line-height: 35px;
-  font-weight: 400;
-  margin: 0px;
+  font-size: 1.8em;
 }
-#inputBox{
-  width: 150px;
-  height: 30px;
-  font-size: 20px;
-  font-weight: bolder;
-}
-.info{
-  height: 80px;
-  font-size: 20px;
-}
-p{
-  margin: 0px;
-  line-height: 24px;
-}
-span{
-  line-height: 24px;
-}
-button{
-  width: 200px;
-  background-color: transparent;
-  border-radius: 10px;
-  border: none;
-  font-family: 'Bungee Shade', cursive;
-  color: #ced6e0;
-  font-size: 24px;
-  padding: 0px;
-}
-button:hover{
-  background-color: #2f3542 ;
-}
-.link{
-  text-align: center;
+input{
+  width: 25%;
+  background-color: #ced6e0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.button{
+  display: flex;
+  align-items: center;
+  height: 1em;
+  padding: 10px;
+  background-color:  #2f3542;
+  border-radius: 10px;
+  font-family: 'Bungee Shade', cursive;  
+  font-size: 1.8em;
+  color: #ced6e0;
+}
+.button:hover{
+  background-color: #6b6d70 ;
 }
