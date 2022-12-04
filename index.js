@@ -39,7 +39,8 @@ function guessTheNumber(){
         }
         else {
             document.getElementById('textOutput').innerHTML = `You Lose!<br>The number was ${computerNumber}`
-            document.getElementById('inputBox').setAttribute('Readonly', '') 
+            document.getElementById('attempts').innerHTML = attempts 
+            document.getElementById('inputBox').setAttribute('Readonly', '')
         }
        
     } 
